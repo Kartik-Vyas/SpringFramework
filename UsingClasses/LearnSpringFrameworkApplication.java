@@ -14,7 +14,8 @@ public class LearnSpringFrameworkApplication {
   // This required following classes in subsequent packages to work.
   
 		//SpringApplication.run(LearnSpringFrameworkApplication.class, args);
-		MarioGame game = new MarioGame();
+		MarioGame game = new MarioGame(); // tightly coupled to GameRunner
+		//SuperContra game2 = new SuperContra();
 		GameRunner runner = new GameRunner(game);
 		runner.runGame();
 	}
